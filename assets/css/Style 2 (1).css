@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+--color-text-dark   : var(--color-white);
+--color-black   : #000000;
+    --color-gray-19 : #020202;
+    --color-gray-18 : #040404;
+    --color-gray-17 : #060607;
+    --color-gray-16 : #080809;
+    --color-gray-15 : #0a0b0b;
+    --color-gray-14 : #0c0d0d;
+    --color-gray-13 : #0e0f0f;
+    --color-gray-12 : #101112;
+    --color-gray-11 : #121314;
+    --color-gray-10 : #141516;
+    --color-gray-9  : #2c2c2d;
+    --color-gray-8  : #434445;
+    --color-gray-7  : #5b5b5c;
+    --color-gray-6  : #727373;
+    --color-gray-5  : #8a8a8b;
+    --color-gray-4  : #a1a1a2;
+    --color-gray-3  : #b9b9b9;
+    --color-gray-2  : #d0d0d0;
+    --color-gray-1  : #e8e8e8;
+    --color-white   : #ffffff;
+--vspace-0_125 : calc(0.125 * var(--space));
+    --vspace-0_25  : calc(0.25 * var(--space));
+    --vspace-0_375 : calc(0.375 * var(--space));
+    --vspace-0_5   : calc(0.5 * var(--space));
+    --vspace-0_625 : calc(0.625 * var(--space));
+    --vspace-0_75  : calc(0.75 * var(--space));
+    --vspace-0_875 : calc(0.875 * var(--space));
+    --vspace-1     : calc(var(--space));
+    --vspace-1_25  : calc(1.25 * var(--space));
+    --vspace-1_5   : calc(1.5 * var(--space));
+    --vspace-1_75  : calc(1.75 * var(--space));
+    --vspace-2     : calc(2 * var(--space));
+    --vspace-2_5   : calc(2.5 * var(--space));
+    --vspace-3     : calc(3 * var(--space));
+    --vspace-3_5   : calc(3.5 * var(--space));
+    --vspace-4     : calc(4 * var(--space));
+    --vspace-4_5   : calc(4.5 * var(--space));
+    --vspace-5     : calc(5 * var(--space));
+
+.skill-bars {
+    list-style : none;
+    margin     : var(--vspace-2) 0 var(--vspace-1);
+}
+
+.skill-bars li {
+    height        : .4rem;
+    background    : var(--color-gray-9);
+    width         : 100%;
+    margin-bottom : calc(var(--vspace-2) - .4rem);
+    padding       : 0;
+    position      : relative;
+}
+
+.skill-bars li strong {
+    position       : absolute;
+    left           : 0;
+    top            : calc((var(--vspace-1) * 1.25) * -1);
+    font-family    : var(--font-1);
+    font-weight    : 600;
+    color          : var(--color-text-dark);
+    text-transform : uppercase;
+    letter-spacing : .2em;
+    font-size      : var(--text-xs);
+    line-height    : var(--vspace-0_75);
+}
+
+.skill-bars li .progress {
+    background : var(--color-1);
+    position   : relative;
+    height     : 100%;
+}
+
+.skill-bars li .progress span {
+    display       : block;
+    font-family   : var(--font-1);
+    color         : white;
+    font-size     : 1rem;
+    line-height   : 1;
+    background    : var(--color-black);
+    padding       : var(--vspace-0_25);
+    border-radius : 4px;
+    position      : absolute;
+    right         : 0;
+    top           : calc((var(--vspace-1) + .8rem) * -1);
+}
+
+.skill-bars li .progress span::after {
+    position         : absolute;
+    left             : 50%;
+    bottom           : -10px;
+    margin-left      : -5px;
+    width            : 0;
+    height           : 0;
+    border           : 5px solid transparent;
+    border-top-color : var(--color-black, var(--color-black));
+    content          : "";
+}
+
+.skill-bars li .percent5 {
+    width : 5%;
+}
+
+.skill-bars li .percent10 {
+    width : 10%;
+}
+
+.skill-bars li .percent15 {
+    width : 15%;
+}
+
+.skill-bars li .percent20 {
+    width : 20%;
+}
+
+.skill-bars li .percent25 {
+    width : 25%;
+}
+
+.skill-bars li .percent30 {
+    width : 30%;
+}
+
+.skill-bars li .percent35 {
+    width : 35%;
+}
+
+.skill-bars li .percent40 {
+    width : 40%;
+}
+
+.skill-bars li .percent45 {
+    width : 45%;
+}
+
+.skill-bars li .percent50 {
+    width : 50%;
+}
+
+.skill-bars li .percent55 {
+    width : 55%;
+}
+
+.skill-bars li .percent60 {
+    width : 60%;
+}
+
+.skill-bars li .percent65 {
+    width : 65%;
+}
+
+.skill-bars li .percent70 {
+    width : 70%;
+}
+
+.skill-bars li .percent75 {
+    width : 75%;
+}
+
+.skill-bars li .percent80 {
+    width : 80%;
+}
+
+.skill-bars li .percent85 {
+    width : 85%;
+}
+
+.skill-bars li .percent90 {
+    width : 90%;
+}
+
+.skill-bars li .percent95 {
+    width : 95%;
+}
+
+.skill-bars li .percent100 {
+    width : 100%;
+}
